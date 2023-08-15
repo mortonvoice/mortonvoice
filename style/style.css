@@ -47,6 +47,15 @@ iframe{
     width: 100%;
     height: 845px;
 }
+iframe.hidden{
+    display: none;
+}
+.form-language-toggle{
+    font-family: "Bitter";
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
 .header{
     font-family: "Cinzel Decorative";
     padding: 10px 16px;
