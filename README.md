@@ -6,4 +6,4 @@ The primary goal of The Morton Voice is to highlight and celebrate the creativit
 within the Morton community. By providing a space for students to share their thoughts, emotions, and artistic talents,
 The Morton Voice contributes to fostering a sense of belonging and community among the student body. 
 
-You can visit the website at <a href='mortonvoice.github.io/mortonvoice' target='_blank'>mortonvoice.github.io/mortonvoice</a> or <a href='tinyurl.com/mortonvoice' target='_blank'>tinyurl.com/mortonvoice</a>
+You can visit the website at [https://mortonvoice.github.io/mortonvoice]([mortonvoice.github.io/mortonvoice) or [https://tinyurl.com/mortonvoice]([tinyurl.com/mortonvoice)
