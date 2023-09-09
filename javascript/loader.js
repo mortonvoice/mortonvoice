@@ -6,4 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
         targetElement.innerHTML = storedInnerHTML
         document.querySelector(".see-more").remove()
     }
-});
+    else{
+        targetElement.innerHTML = "<h1>Something went wrong displaying this piece, please try again later</h1>"
+    }
+})
