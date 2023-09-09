@@ -18,6 +18,6 @@ document.body.addEventListener("click", (event) => {
     if (target.classList.contains("see-more")) {
         const innerHTML = target.parentElement.innerHTML
         localStorage.setItem("innerHTMLData", innerHTML)
-        window.location.href = "/piece.html"
+        window.location.href = `${window.location.href}/piece.html`
     }
 });
