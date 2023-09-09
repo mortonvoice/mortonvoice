@@ -71,7 +71,7 @@ iframe.hidden{
 .margin-grid{
     display: grid;
     gap: 10px;
-    grid-template-columns: 1fr 60% 1fr;
+    grid-template-columns: 20% 60% 20%;
     padding: 10px;
 }
 .column{
@@ -133,8 +133,6 @@ iframe.hidden{
         grid-column-start: 1;
         grid-column-end: 3;
     }
-}
-@media screen and (max-width: 850px){
     .nav-item{
         display: block;
         width: 100%;
@@ -155,5 +153,8 @@ iframe.hidden{
     }
     .grid{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .margin-grid{
+        grid-template-columns: 0% 100% 0%;
     }
 }
