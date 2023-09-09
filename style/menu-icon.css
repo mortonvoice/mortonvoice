@@ -21,7 +21,7 @@
     width: 30px;
     transform: translate(0, -11px) rotate(45deg);
 }
-@media screen and (max-width: 850px){
+@media screen and (max-width: 1000px){
     .menu-bar{
         display: block;
     }

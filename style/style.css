@@ -68,6 +68,12 @@ iframe.hidden{
     grid-template-columns: repeat(3, 1fr);
     padding: 10px;
 }
+.margin-grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 20% 60% 20%;
+    padding: 10px;
+}
 .column{
     display: flex;
     flex-direction: column;
@@ -117,7 +123,7 @@ iframe.hidden{
     text-align: center;
 }
 .margin-column{
-    width: 50px;
+    width: 10%;
 }
 @media screen and (max-width: 1000px){
     .margin-column{
@@ -127,8 +133,6 @@ iframe.hidden{
         grid-column-start: 1;
         grid-column-end: 3;
     }
-}
-@media screen and (max-width: 850px){
     .nav-item{
         display: block;
         width: 100%;
@@ -149,5 +153,8 @@ iframe.hidden{
     }
     .grid{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .margin-grid{
+        grid-template-columns: 0% 100% 0%;
     }
 }
