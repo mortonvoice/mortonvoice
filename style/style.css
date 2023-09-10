@@ -156,5 +156,6 @@ iframe.hidden{
     }
     .margin-grid{
         grid-template-columns: 0% 100% 0%;
+padding: 5px;
     }
 }
