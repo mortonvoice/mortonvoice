@@ -123,6 +123,9 @@ iframe.hidden{
 .center{
     text-align: center;
 }
+.center-column{
+    padding: 30px;
+}
 .margin-column{
     width: 10%;
 }
