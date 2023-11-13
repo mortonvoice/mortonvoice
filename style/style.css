@@ -26,7 +26,6 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    background-color: #333;
     padding: 15px;
     padding-left: 0;
 }
@@ -36,19 +35,25 @@ body {
 }
 
 .nav-item-link {
-    color: white;
+    color: black;
     text-decoration: none;
+    font-weight: bold;
     padding: 15px 16px;
     font-size: 12pt;
 }
 
 .nav-item-link:hover {
-    background-color: #222;
+    text-decoration: underline;
+}
+
+.hidden-on-mobile-wrapper{
+    float: right;
 }
 
 .intro {
     margin: 10px;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 iframe {
@@ -185,7 +190,11 @@ iframe.hidden {
     }
 
     .change.hidden-on-mobile {
-        display: block;
+        display: inline-block;
+    }
+
+    .hidden-on-mobile-wrapper{
+        float: none;
     }
 
     .grid {

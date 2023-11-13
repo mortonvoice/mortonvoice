@@ -5,7 +5,7 @@
     display: none;
     width: 30px;
     height: 3px;
-    background-color: white;
+    background: black;
     margin: 8px 0;
     border-radius: 5px;
     transition: 400ms;
