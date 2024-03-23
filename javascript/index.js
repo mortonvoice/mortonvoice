@@ -1,23 +1,41 @@
-const hidden_on_mobile = Array.from(document.querySelectorAll(".hidden-on-mobile"))
-const menu_wrapper = document.querySelector(".menu-wrapper")
-const english_form = document.querySelector(".english-form")
-const spanish_form = document.querySelector(".spanish-form")
-
-function toggle_menu(){
-    menu_wrapper.classList.toggle("change")
-    hidden_on_mobile.forEach((element) => element.classList.toggle("change"))
-}
-
-function toggle_iframe(show, hide){
-    show.classList.toggle("hidden")
-    hide.classList.toggle("hidden")
-}
+const article_preview = document.querySelector(".article-preview")
+const article_preview_mobile = document.querySelector(".article-preview-mobile")
+const article_preview_mobile_fill = document.querySelector(".article-preview-mobile-fill")
+const close_modal = document.querySelector(".close-modal")
 
 document.body.addEventListener("click", (event) => {
     const target = event.target
-    if (target.classList.contains("see-more")) {
+    if (target.classList.contains("selector")) {
         const innerHTML = target.parentElement.innerHTML
-        localStorage.setItem("innerHTMLData", innerHTML)
-        window.location.href = "piece.html"
+        if (window.innerWidth <= 900) {
+            article_preview_mobile_fill.innerHTML = innerHTML
+            article_preview_mobile_fill.querySelector(".selector").remove()
+            article_preview_mobile.showModal()
+            document.body.classList.toggle("modal-open")
+        }
+        else{
+            article_preview.innerHTML = innerHTML
+            article_preview.querySelector(".selector").remove()
+        }
     }
-});
+})
+
+article_preview_mobile.addEventListener("click", e => {
+    const dialogDimensions = article_preview_mobile.getBoundingClientRect()
+    if (
+        e.clientX < dialogDimensions.left ||
+        e.clientX > dialogDimensions.right ||
+        e.clientY < dialogDimensions.top ||
+        e.clientY > dialogDimensions.bottom
+    ) {
+        article_preview_mobile.close()
+    }
+})
+
+article_preview_mobile.addEventListener("close", () => {
+    document.body.classList.toggle("modal-open")
+})
+
+close_modal.addEventListener("click", () => {
+    article_preview_mobile.close()
+})
